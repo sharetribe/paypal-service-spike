@@ -3,15 +3,15 @@ module PaypalService
 
     def info(msg)
       #TODO: Fix logging totally
-      Rails.logger.warn "[Paypal] #{msg}"
+      puts "[Paypal] #{msg}"
     end
 
     def warn(msg)
-      Rails.logger.warn "[Paypal] #{msg}"
+      puts "[Paypal] #{msg}"
     end
 
     def error(msg)
-      Rails.logger.error "[Paypal] #{msg}"
+      puts "[Paypal] #{msg}"
     end
 
     def log_request_input(request, input)
